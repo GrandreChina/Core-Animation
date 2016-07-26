@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4AEA221EFA91C11310DC2F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDE628445535EA50E5A9B36 /* libPods.a */; };
 		B15E7C381C3FAFED007A23D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E7C371C3FAFED007A23D5 /* AppDelegate.swift */; };
 		B15E7C3A1C3FAFED007A23D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15E7C391C3FAFED007A23D5 /* ViewController.swift */; };
 		B15E7C3D1C3FAFED007A23D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15E7C3B1C3FAFED007A23D5 /* Main.storyboard */; };
 		B15E7C3F1C3FAFED007A23D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15E7C3E1C3FAFED007A23D5 /* Assets.xcassets */; };
 		B15E7C421C3FAFED007A23D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15E7C401C3FAFED007A23D5 /* LaunchScreen.storyboard */; };
+		B15E7C4A1C3FDAB9007A23D5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B15E7C491C3FDAB9007A23D5 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6C339261FB9F583F0D4251B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B15E7C341C3FAFEC007A23D5 /* Core Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Animation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15E7C371C3FAFED007A23D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15E7C391C3FAFED007A23D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,10 @@
 		B15E7C3E1C3FAFED007A23D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B15E7C411C3FAFED007A23D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B15E7C431C3FAFED007A23D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15E7C491C3FDAB9007A23D5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B15E7C4B1C3FDE50007A23D5 /* Core Animation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Core Animation-Bridging-Header.h"; sourceTree = "<group>"; };
+		BBDE628445535EA50E5A9B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12901C1971D095A0E1EEC64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4AEA221EFA91C11310DC2F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B66BE81A539CEB5133F934F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBDE628445535EA50E5A9B36 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F36312E9FEC47ADD424CB79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F12901C1971D095A0E1EEC64 /* Pods.debug.xcconfig */,
+				A6C339261FB9F583F0D4251B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B15E7C2B1C3FAFEC007A23D5 = {
 			isa = PBXGroup;
 			children = (
+				B15E7C491C3FDAB9007A23D5 /* Podfile */,
 				B15E7C361C3FAFED007A23D5 /* Core Animation */,
 				B15E7C351C3FAFEC007A23D5 /* Products */,
+				7F36312E9FEC47ADD424CB79 /* Pods */,
+				6B66BE81A539CEB5133F934F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,7 @@
 				B15E7C3E1C3FAFED007A23D5 /* Assets.xcassets */,
 				B15E7C401C3FAFED007A23D5 /* LaunchScreen.storyboard */,
 				B15E7C431C3FAFED007A23D5 /* Info.plist */,
+				B15E7C4B1C3FDE50007A23D5 /* Core Animation-Bridging-Header.h */,
 			);
 			path = "Core Animation";
 			sourceTree = "<group>";
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15E7C461C3FAFED007A23D5 /* Build configuration list for PBXNativeTarget "Core Animation" */;
 			buildPhases = (
+				832BF2372271EBC8647C1BDD /* Check Pods Manifest.lock */,
 				B15E7C301C3FAFEC007A23D5 /* Sources */,
 				B15E7C311C3FAFEC007A23D5 /* Frameworks */,
 				B15E7C321C3FAFEC007A23D5 /* Resources */,
+				8834DFABFAD9F65CBD4790F9 /* Embed Pods Frameworks */,
+				27996B1B1283B78AE2BA764F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +157,60 @@
 			files = (
 				B15E7C421C3FAFED007A23D5 /* LaunchScreen.storyboard in Resources */,
 				B15E7C3F1C3FAFED007A23D5 /* Assets.xcassets in Resources */,
+				B15E7C4A1C3FDAB9007A23D5 /* Podfile in Resources */,
 				B15E7C3D1C3FAFED007A23D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27996B1B1283B78AE2BA764F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		832BF2372271EBC8647C1BDD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8834DFABFAD9F65CBD4790F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B15E7C301C3FAFEC007A23D5 /* Sources */ = {
@@ -246,23 +327,30 @@
 		};
 		B15E7C471C3FAFED007A23D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12901C1971D095A0E1EEC64 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Core Animation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Grandre.Core-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Core Animation/Core Animation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B15E7C481C3FAFED007A23D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C339261FB9F583F0D4251B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Core Animation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Grandre.Core-Animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Core Animation/Core Animation-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +373,7 @@
 				B15E7C481C3FAFED007A23D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
